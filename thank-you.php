@@ -7,8 +7,9 @@ $additionalInfo = $_POST['txtAdditionalInfo'];
 $bestTime = $_POST['ddlBestTime'];
 $referal = $_POST['txtReferal'];
 
-$formcontent = "Full name: $name \n Email: $email \n Telephone number: $telNo \n Nature of enquiry: $natureOfEnquiry \n Best time to call: $bestTime \n Additional information: $additionalInfo \n Where they heard about us: $referal";
+$formcontent = "Full name: $name \n Email: $email \n Telephone number: $telNo \n Nature of enquiry: $natureOfEnquiry \n Best time to call: $bestTime \n Additional information: $additionalInfo \n Where they heard about us: $referal \n";
 $recipient = "krishma@franchisefutures.co.uk";
+//$recipient = "anmol@fivequarterdesigns.com";
 $subject = "Franchise Futures - Enquiry Form";
 $mailheader = "From: $email \r\n";
 mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
