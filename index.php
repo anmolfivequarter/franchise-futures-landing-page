@@ -8,7 +8,7 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.typekit.net/nrx1onf.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 
 	<title>Franchise Futures</title>
@@ -31,27 +31,30 @@
 	<section class="enquiry">
 		<div class="container d-flex justify-content-center">
 			<div class="enquiry-form">
-				<form>
+				<form method="post" action="thank-you.php" name="enquiry-form">
 					<div class="form-group">
 						<label for="txtFullName" class="sr-only">Full Name</label>
-						<input type="text" class="form-control" id="txtFullName" aria-describedby="fullNameHelp" placeholder="Full Name">
+						<input type="text" class="form-control" id="txtFullName" name="txtFullName" aria-describedby="fullNameHelp" placeholder="Full Name" required>
 					</div>
 					<div class="form-group">
 						<label for="txtEmail" class="sr-only">Email address</label>
-						<input type="email" class="form-control" id="txtEmail" aria-describedby="emailHelp" placeholder="Enter email">
+						<input type="email" class="form-control" id="txtEmail" name="txtEmail" aria-describedby="emailHelp" placeholder="Enter email" required>
 					</div>
 					<div class="form-group">
 						<label for="txtTelNo" class="sr-only">Telephone Number</label>
-						<input type="tel" class="form-control" id="txtTelNo" placeholder="Telephone Number">
+						<input type="tel" class="form-control" id="txtTelNo" name="txtTelNo" placeholder="Telephone Number" required>
 					</div>
 					<div class="form-group">
-						<select name="ddlIAm" id="ddlIAm" class="form-control">
-							<option value="">I am...</option>
-							<option value="">A franchisor</option>
-							<option value="">A franchisee</option>
-							<option value="">Looking for a franchise opportunity</option>
-							<option value="">Looking to convert my business into a franchise model</option>
-						</select>
+						<span class="custom-dropdown">
+							<select required name="ddlIAm" id="ddlIAm" name="ddlIAm" class="form-control">
+								<option value="">Nature of your enquiry...</option>
+								<option value="I am a Franchisor looking for support">I am a Franchisor looking for support</option>
+								<option value="I am a Franchisee looking for support">I am a Franchisee looking for support</option>
+								<option value="I am looking for a Franchise opportunity">I am looking for a Franchise opportunity</option>
+								<option value="I am looking to convert my business into a Franchise model">I am looking to convert my business into a Franchise model</option>
+								<option value="Other">Other</option>
+							</select>
+						</span>
 					</div>
 					<div class="form-group">
 						<label for="txtAdditionalInfo" class="sr-only">Additional Info</label>
@@ -59,29 +62,37 @@
 					</div>
 					<div class="form-group">
 						<span class="custom-dropdown">
-							<select name="ddlBestTime" id="ddlBestTime" class="form-control">
+							<select name="ddlBestTime" id="ddlBestTime" class="form-control" required>
 								<option value="">Best time to call...</option>
-								<option value="">Morning</option>
-								<option value="">Afternoon</option>
-								<option value="">Evening</option>
-								<option value="">Anytime</option>
+								<option value="Morning">Morning</option>
+								<option value="Afternoon">Afternoon</option>
+								<option value="Evening">Evening</option>
+								<option value="Anytime">Anytime</option>
 							</select>
 						</span>
 					</div>
 					<div class="form-group">
-						<label for="txtReferal" class="sr-only">Full Name</label>
-						<input type="text" class="form-control" id="txtReferal" aria-describedby="fullNameHelp" placeholder="Where did you hear of us?">
+						<label for="txtReferal" class="sr-only">Where did you hear of us?</label>
+						<input type="text" class="form-control" id="txtReferal" aria-describedby="referalHelp" placeholder="Where did you hear of us?" required>
 					</div>
-					<button type="submit" class="btn btn-primary">Submit</button>
+					<button type="submit" class="btn btn-ff btn-lg btn-block">SUBMIT</button>
 				</form>
 			</div>
 		</div>
 	</section>
 
+	<footer>
+		<div class="container">
+			<p class="text-center">t: +44 (0) 7718 905672<br>e: <a href="mailto:krishma@franchisefutures.co.uk">krishma@franchisefutures.co.uk</a><br>w: <a href="http://www.franchisefutures.co.uk">www.franchisefutures.co.uk</a></p>
+		</div>
+	</footer>
+
 	<!-- Javascript -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 
 </html>

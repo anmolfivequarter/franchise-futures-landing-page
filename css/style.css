@@ -53,6 +53,28 @@ header img {
       display: block;
       vertical-align: middle; }
       /* line 72, /Applications/MAMP/htdocs/franchise-futures-landing-page/css/style.scss */
+      .enquiry .enquiry-form .custom-dropdown::before {
+        content: "";
+        position: absolute;
+        pointer-events: none;
+        width: 2em;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border-radius: 0 3px 3px 0; }
+      /* line 82, /Applications/MAMP/htdocs/franchise-futures-landing-page/css/style.scss */
+      .enquiry .enquiry-form .custom-dropdown::after {
+        content: "";
+        position: absolute;
+        pointer-events: none;
+        content: "\25BC";
+        height: 1em;
+        font-size: .625em;
+        line-height: 1;
+        right: 1.2em;
+        top: 50%;
+        margin-top: -.5em; }
+      /* line 94, /Applications/MAMP/htdocs/franchise-futures-landing-page/css/style.scss */
       .enquiry .enquiry-form .custom-dropdown select {
         color: #4A4A4A;
         font-size: 22px;
@@ -64,5 +86,34 @@ header img {
         text-indent: 0.01px;
         text-overflow: '';
         -webkit-appearance: button; }
+    /* line 107, /Applications/MAMP/htdocs/franchise-futures-landing-page/css/style.scss */
+    .enquiry .enquiry-form .error {
+      color: red; }
+    /* line 110, /Applications/MAMP/htdocs/franchise-futures-landing-page/css/style.scss */
+    .enquiry .enquiry-form .btn-ff {
+      background-color: #00C1DE;
+      border-radius: 0;
+      color: white; }
+      /* line 114, /Applications/MAMP/htdocs/franchise-futures-landing-page/css/style.scss */
+      .enquiry .enquiry-form .btn-ff:hover {
+        background-color: #00abc5; }
+
+/* FOOTER */
+/* line 124, /Applications/MAMP/htdocs/franchise-futures-landing-page/css/style.scss */
+footer {
+  padding: 30px 0;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 22px;
+  color: #4A4A4A; }
+  /* line 130, /Applications/MAMP/htdocs/franchise-futures-landing-page/css/style.scss */
+  footer p a {
+    color: #4A4A4A;
+    text-decoration: none; }
+    /* line 133, /Applications/MAMP/htdocs/franchise-futures-landing-page/css/style.scss */
+    footer p a:hover {
+      color: #4A4A4A;
+      text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */

@@ -25,7 +25,7 @@ $grey: #4A4A4A;
 @mixin roboto() {
 	font-family: 'Roboto', sans-serif;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 100;
 }
 
 /* HEADER */
@@ -69,6 +69,28 @@ header {
 			position: relative;
 			display: block;
 			vertical-align: middle;
+			&::before {
+				content: "";
+				position: absolute;
+				pointer-events: none;
+				width: 2em;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				border-radius: 0 3px 3px 0;
+			}
+			&::after {
+				content: "";
+				position: absolute;
+				pointer-events: none;
+				content: "\25BC";
+				height: 1em;
+				font-size: .625em;
+				line-height: 1;
+				right: 1.2em;
+				top: 50%;
+				margin-top: -.5em;
+			}
 			select {
 				color: $grey;
 				font-size: 22px;
@@ -80,6 +102,37 @@ header {
 				text-indent: 0.01px;
 				text-overflow: '';
 				-webkit-appearance: button;
+			}
+		}
+		.error {
+			color: red;
+		}
+		.btn-ff {
+			background-color: $firstblue;
+			border-radius:0;
+			color: white;
+			&:hover {
+				background-color: darken($firstblue, 5%);
+			}
+		}
+	}
+}
+
+
+/* FOOTER */
+
+footer {
+	padding: 30px 0;
+	@include roboto();
+	font-size: 22px;
+	color: $grey;
+	p {
+		a {
+			color: $grey;
+			text-decoration: none;
+			&:hover {
+				color: $grey;
+				text-decoration: none;
 			}
 		}
 	}
