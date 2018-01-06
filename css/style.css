@@ -1,0 +1,68 @@
+/*
+Author: Anmol Nandha - Five Quarter Designs
+Author URI: http://fivequarterdesigns.com/
+Description: Fanchise Futures brings consultancy and coaching to individuals and businesses looking to move into the fanchise business.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: fanchisefutures
+*/
+/* COLOUR */
+/* FONTS */
+/* HEADER */
+/* line 34, /Applications/MAMP/htdocs/franchise-futures-landing-page/css/style.scss */
+header img {
+  margin: auto;
+  width: 290px; }
+
+/* CONTENT */
+/* line 42, /Applications/MAMP/htdocs/franchise-futures-landing-page/css/style.scss */
+.content {
+  font-family: "mr-eaves-sans", sans-serif;
+  font-style: normal;
+  font-weight: 200; }
+  /* line 44, /Applications/MAMP/htdocs/franchise-futures-landing-page/css/style.scss */
+  .content h1 {
+    font-size: 38px;
+    color: #00C1DE; }
+  /* line 48, /Applications/MAMP/htdocs/franchise-futures-landing-page/css/style.scss */
+  .content h2 {
+    font-size: 28px;
+    color: #4A4A4A; }
+
+/* ENQUIRY FORM */
+/* line 56, /Applications/MAMP/htdocs/franchise-futures-landing-page/css/style.scss */
+.enquiry {
+  margin-top: 50px;
+  background-color: #E0F8FB;
+  padding: 30px 0;
+  font-family: "mr-eaves-sans", sans-serif;
+  font-style: normal;
+  font-weight: 200; }
+  /* line 61, /Applications/MAMP/htdocs/franchise-futures-landing-page/css/style.scss */
+  .enquiry .enquiry-form {
+    width: 45%; }
+    /* line 63, /Applications/MAMP/htdocs/franchise-futures-landing-page/css/style.scss */
+    .enquiry .enquiry-form .form-control {
+      border-radius: 0;
+      border: 0;
+      font-size: 22px; }
+    /* line 68, /Applications/MAMP/htdocs/franchise-futures-landing-page/css/style.scss */
+    .enquiry .enquiry-form .custom-dropdown {
+      position: relative;
+      display: block;
+      vertical-align: middle; }
+      /* line 72, /Applications/MAMP/htdocs/franchise-futures-landing-page/css/style.scss */
+      .enquiry .enquiry-form .custom-dropdown select {
+        color: #4A4A4A;
+        font-size: 22px;
+        padding: 0;
+        padding-left: 13px;
+        border: 0;
+        margin: 0;
+        border-radius: 0;
+        text-indent: 0.01px;
+        text-overflow: '';
+        -webkit-appearance: button; }
+
+/*# sourceMappingURL=style.css.map */
